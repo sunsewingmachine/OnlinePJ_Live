@@ -1,4 +1,4 @@
-package com.youtubevideos.model
+package com.onlinepjliveapp.model
 
 data class VideoModel(
     val id: String,

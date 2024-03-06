@@ -1,7 +1,7 @@
-package com.youtubevideos.api
+package com.onlinepjliveapp.api
 
 import com.google.gson.Gson
-import com.youtubevideos.util.BASE_URL
+import com.onlinepjliveapp.util.BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

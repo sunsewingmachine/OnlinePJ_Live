@@ -1,4 +1,4 @@
-package com.youtubevideos.util
+package com.onlinepjliveapp.util
 
 import android.app.Activity
 import android.content.Context
@@ -6,8 +6,8 @@ import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import com.google.android.material.snackbar.Snackbar
 import com.google.gson.JsonElement
-import com.youtubevideos.App.Companion.context
-import com.youtubevideos.model.VideoModel
+import com.onlinepjliveapp.App.Companion.context
+import com.onlinepjliveapp.model.VideoModel
 
 object Util {
 

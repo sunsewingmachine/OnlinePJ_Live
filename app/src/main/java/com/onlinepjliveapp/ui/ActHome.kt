@@ -1,4 +1,4 @@
-package com.youtubevideos.ui
+package com.onlinepjliveapp.ui
 
 // import android.R
 import android.os.Build
@@ -7,8 +7,8 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-// import com.youtubevideos.R
-import com.youtubevideos.databinding.ActHomeBinding
+// import com.onlinepjliveapp.R
+import com.onlinepjliveapp.databinding.ActHomeBinding
 
 
 class ActHome : AppCompatActivity() {
@@ -28,21 +28,21 @@ class ActHome : AppCompatActivity() {
             val window = window
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-            window.statusBarColor = ContextCompat.getColor(this, com.youtubevideos.R.color.black)
+            window.statusBarColor = ContextCompat.getColor(this, com.onlinepjliveapp.R.color.black)
         }
 
         binding.video.setOnClickListener {
-            binding.videoIcon.imageTintList = getColorStateList(com.youtubevideos.R.color.selected_icon)
-            binding.videoIcon.imageTintList = getColorStateList(com.youtubevideos.R.color.white)
-            binding.playerIcon.imageTintList = getColorStateList(com.youtubevideos.R.color.selected_icon)
+            binding.videoIcon.imageTintList = getColorStateList(com.onlinepjliveapp.R.color.selected_icon)
+            binding.videoIcon.imageTintList = getColorStateList(com.onlinepjliveapp.R.color.white)
+            binding.playerIcon.imageTintList = getColorStateList(com.onlinepjliveapp.R.color.selected_icon)
             // navigateTo(fragVideos)
             navigateTo(FragAllvideos())
         }
 
         binding.player.setOnClickListener {
-            binding.playerIcon.imageTintList = getColorStateList(com.youtubevideos.R.color.selected_icon)
-            binding.playerIcon.imageTintList = getColorStateList(com.youtubevideos.R.color.white)
-            binding.videoIcon.imageTintList = getColorStateList(com.youtubevideos.R.color.selected_icon)
+            binding.playerIcon.imageTintList = getColorStateList(com.onlinepjliveapp.R.color.selected_icon)
+            binding.playerIcon.imageTintList = getColorStateList(com.onlinepjliveapp.R.color.white)
+            binding.videoIcon.imageTintList = getColorStateList(com.onlinepjliveapp.R.color.selected_icon)
             navigateTo(FragVideoPlayer())
         }
 
@@ -65,7 +65,7 @@ class ActHome : AppCompatActivity() {
     private fun navigateTo(frag: Fragment, backStack: Boolean = false) {
         val transaction = supportFragmentManager
             .beginTransaction()
-            .replace(com.youtubevideos.R.id.frame, frag)
+            .replace(com.onlinepjliveapp.R.id.frame, frag)
 
         if (backStack)
             transaction.addToBackStack(frag.javaClass.simpleName)

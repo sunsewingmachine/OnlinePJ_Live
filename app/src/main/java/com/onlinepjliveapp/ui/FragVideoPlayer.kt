@@ -1,4 +1,4 @@
-package com.youtubevideos.ui
+package com.onlinepjliveapp.ui
 
 import android.annotation.SuppressLint
 import android.content.pm.ActivityInfo
@@ -11,11 +11,11 @@ import android.webkit.WebChromeClient
 import android.webkit.WebViewClient
 import android.widget.FrameLayout
 import com.google.gson.JsonElement
-import com.youtubevideos.R
-import com.youtubevideos.api.ApiClient
-import com.youtubevideos.databinding.FragVideoPlayerBinding
-import com.youtubevideos.util.Util
-import com.youtubevideos.util.Util.noInternet
+import com.onlinepjliveapp.R
+import com.onlinepjliveapp.api.ApiClient
+import com.onlinepjliveapp.databinding.FragVideoPlayerBinding
+import com.onlinepjliveapp.util.Util
+import com.onlinepjliveapp.util.Util.noInternet
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

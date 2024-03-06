@@ -1,4 +1,4 @@
-package com.youtubevideos.ui
+package com.onlinepjliveapp.ui
 
 import android.annotation.SuppressLint
 import android.icu.text.SimpleDateFormat
@@ -11,14 +11,14 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.google.gson.JsonElement
-import com.youtubevideos.R
-import com.youtubevideos.api.ApiClient
-import com.youtubevideos.databinding.FragVideoListBinding
-import com.youtubevideos.databinding.ItemVideoBinding
-import com.youtubevideos.model.VideoModel
-import com.youtubevideos.util.Util
-import com.youtubevideos.util.Util.noInternet
-import com.youtubevideos.util.Util.showSnackBar
+import com.onlinepjliveapp.R
+import com.onlinepjliveapp.api.ApiClient
+import com.onlinepjliveapp.databinding.FragVideoListBinding
+import com.onlinepjliveapp.databinding.ItemVideoBinding
+import com.onlinepjliveapp.model.VideoModel
+import com.onlinepjliveapp.util.Util
+import com.onlinepjliveapp.util.Util.noInternet
+import com.onlinepjliveapp.util.Util.showSnackBar
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

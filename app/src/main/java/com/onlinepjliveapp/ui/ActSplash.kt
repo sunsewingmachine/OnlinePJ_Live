@@ -1,11 +1,11 @@
-package com.youtubevideos.ui
+package com.onlinepjliveapp.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.youtubevideos.R
+import com.onlinepjliveapp.R
 
 class ActSplash : AppCompatActivity() {
 

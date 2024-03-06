@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.youtubevideos"
+    namespace = "com.onlinepjliveapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.youtubevideos"
+        applicationId = "com.onlinepjliveapp"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
