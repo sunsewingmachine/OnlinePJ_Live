@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <!-- Set the text color for the title and subtitle -->
+        <item name="android:textColor">@color/blue</item>
+        <!-- Set the icon color (back arrow, menu) -->
+        <item name="android:tint">@color/black</item>
+    </style>
+
+    <!--
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">#005293</item>
+        <item name="actionMenuTextColor">#BABABA</item>
+        <item name="android:itemTextAppearance">@style/MyToolbarTextAppearance</item>
+        <item name="android:background">#005293</item>
+    </style>
+
+    <style name="MyToolbarTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">#BABABA</item>
+    </style>
+ -->
+</resources>

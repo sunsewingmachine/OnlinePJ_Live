@@ -35,9 +35,9 @@ object Util {
     }
 
     fun generateUrl(pageToken: String = ""): String {
-        val base = "https://www.googleapis.com/youtube/v3/search?"
-        val key = "AIzaSyBH7mQZUHn54AEfY0UPXR_kLR9W_TV89ow"
-        val channelId = "UCAwsBS36n-Vp2y21vOXqPxQ"
+        val base = "null"
+        val key = "null"
+        val channelId = "null"
         val uri = "${base}part=snippet&channelId=$channelId&maxResults=10&key=$key"
         if (pageToken.isNotEmpty())
             return "$uri&pageToken=$pageToken"

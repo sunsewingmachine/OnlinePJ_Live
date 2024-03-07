@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Youtube Videos"
+rootProject.name = "OnlinePJ Live"
 include(":app")
  
