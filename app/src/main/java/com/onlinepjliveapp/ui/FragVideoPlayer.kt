@@ -3,13 +3,15 @@ package com.onlinepjliveapp.ui
 import android.annotation.SuppressLint
 import android.content.pm.ActivityInfo
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebChromeClient
+import android.webkit.WebResourceRequest
+import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.FrameLayout
+import androidx.fragment.app.Fragment
 import com.google.gson.JsonElement
 import com.onlinepjliveapp.R
 import com.onlinepjliveapp.api.ApiClient
@@ -19,6 +21,7 @@ import com.onlinepjliveapp.util.Util.noInternet
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+
 
 class FragVideoPlayer : Fragment() {
 
@@ -110,6 +113,7 @@ class FragVideoPlayer : Fragment() {
         binding.web.webChromeClient = MyChromeClient()
         binding.web.webViewClient = MyWebClient()
 
+
         // binding.web.loadUrl("$fullUrlToShow?autoplay=1")
 
         // val fullUrlToShow = "https://www.example.com/video?vimeo_id"
@@ -165,8 +169,18 @@ class FragVideoPlayer : Fragment() {
         }
     }
 
+    // inner class MyWebClient: WebViewClient()
 
-    inner class MyWebClient: WebViewClient()
+
+    inner class MyWebClient : WebViewClient() {
+        override fun shouldOverrideUrlLoading(
+            view: WebView?,
+            request: WebResourceRequest?
+        ): Boolean {
+            return false
+        }
+    }
+
 
     inner class MyChromeClient : WebChromeClient() {
 
